@@ -1,0 +1,259 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+	
+}
+header{
+	position: relative;
+}
+hr{
+	color: #000000;
+	border: 1px solid;
+	width: 100%;
+}
+body {
+	width: fit-content;
+	height:fit-content;
+	padding: 10px 10px;
+	background: linear-gradient(318deg, rgb(252, 40, 222) 0%, rgb(203, 177, 251) 100%);
+	background-repeat:no-repeat;
+}
+p{
+	max-width: 120rem;
+    margin: 0 auto;
+	text-align: left;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li A:hover{
+	background-color: #040404;
+}
+.pages {
+    list-style-type:none;
+	height: 50px;
+	width: 10;
+    margin: 0;
+    padding: 10vw;
+	background: #d353f3;
+    color: rgb(230, 86, 230);
+}
+.Característica {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 25px 0;
+}
+.Característica p{
+	max-width: 50rem;
+    margin: 0 auto;
+	text-align: justify;
+	width: 10;
+    margin: 0;
+    padding: 10;
+	font-size: 16px;font-family: Verdana, Calibri, sans-serif; 
+}
+.Característica1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 25px 0;
+}
+.Característica2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 25px 0;
+}
+.content {
+	display: flex;
+	align-items: center;
+}
+.contenedor{
+	display: flex;
+	justify-content: center;
+	text-align: left;
+}
+.todo_productos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 25px 0;
+}
+.productos1 {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	margin: 25px 0;
+}
+.productos2 {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	margin: 25px 0;
+}
+.Contacto {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Contacto_info {
+	display: flex;
+	flex-direction: column;
+}
+.h1{
+	width: 400px;
+	color: #000000;
+	font-family: "Alex Brush";
+	font-weight: 400;
+	font-size: 0%;
+	text-align: left;
+}
+h2 {
+    color: #ff00b3; 
+	font-family: Verdana, Calibri, sans-serif;
+	font-size: 28px;
+}
+
+h3 {
+    color: #8258FA; font-family: Verdana, Calibri, sans-serif; 
+	font-size: 24px;
+}
+
+h4{
+	color: #000000;font-family: Verdana, Calibri, sans-serif; 
+	font-size: 24px;
+	text-align: left;
+}
+p {
+	max-width: 50rem;
+    margin: 0 auto;
+	text-align: justify;
+	width: 10;
+    margin: 0;
+    padding: 10;
+	font-size: 16px;font-family: Verdana, Calibri, sans-serif; 
+}
+.Boton_productos a{
+	color: #040404;
+	text-decoration:none;
+	text-align: center;
+	border: 2px solid #000000;
+	padding: 10px 20px;
+	border-radius: 5px;
+	align-items: center;
+
+}
+.formulario {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: left;
+	padding: 10px 25px;
+	margin: 0xp 10px;
+}
+.formulario a{
+	color: #000000;
+	text-decoration: none;
+	text-align: center;
+}
+
+.formulario1{
+	color: #040404;
+	text-decoration:none;
+	text-align: center;
+	border: 2px solid #000000;
+	padding: 10px 20px;
+	border-radius: 5px;
+	align-items: center;
+}
+.formulario2{
+	color: #040404;
+	text-decoration:none;
+	text-align: center;
+	border: 2px solid #000000;
+	padding: 10px 20px;
+	border-radius: 5px;
+	align-items: center;
+}
+
+
+footer {
+	width: 90vw;
+	padding: 10px;
+    text-align:left;
+    background: #d353f3;
+    color: rgb(230, 86, 230);
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (width <= 567px) { 
+	/* index */
+	.pages {
+		display:table-row ;
+		flex-direction: row;
+		background: #d353f3;
+		background-size: auto;
+		color: rgb(230, 86, 230);
+	}
+	header {
+		display: table-row-group;
+		flex-direction: row;
+	}
+	.content {
+		display: list-item;
+		justify-content:center;
+		flex-direction: row;
+		gap: 30px;
+	}
+	.content img {
+        margin: 0;
+        padding: 0;
+
+	}
+	.content p{
+		max-width: 25rem;
+		margin: 0 ;
+		text-align: center;
+		justify-content: right;
+		width: 10;
+		margin: 0;
+		padding: 10;
+		font-size: 16px;font-family: Verdana, Calibri, sans-serif; 
+	}
+	/* sobre nosotros */
+	.Característica {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 25px 0;
+	}
+	.Característica p{
+		max-width: 50rem;
+		margin: 0 auto;
+		text-align: justify;
+		width: 100%;
+		height: 50%;
+		margin: 10px;
+		padding: 10;
+		font-size: 16px;font-family: Verdana, Calibri, sans-serif; 
+	}
+	.Característica1 {
+		flex-direction: column;
+		margin: 25px 10px;
+	}
+	.Característica2 {
+		flex-direction: column;
+		margin: 25px 10px;
+	}
+}
+	/* productos */
