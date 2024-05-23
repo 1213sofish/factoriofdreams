@@ -1,0 +1,48 @@
+header{
+    position: relative;
+    .dropdown{
+        display: none;
+    }
+    hr{
+        color:$color_negro;
+        border: 1px solid;
+        width: 100%;
+    }
+    .pages {
+        list-style-type:none;
+        height: 70px;
+        width: 100%;
+        margin: 15px 5px ;
+        padding: 10px;
+        background: $color_page_background;
+        color: $color_page;
+        position: relative;
+    }
+    ul {
+        text-align: center;
+        display: flex;
+        li {
+            float: left;
+            overflow: hidden;
+            a {
+                color: $color_a;
+                display: block;
+                padding: 12px 10px;
+                text-decoration: none;
+            }
+            A:hover{
+                background-color:$background-color;
+            }
+        }
+    }
+    
+    p{
+        max-width: 120rem;
+        margin: 2;
+        text-align: left;
+    }
+    .link1 img{
+        width: 25px;
+        height: 25px;
+    }
+}

@@ -1,0 +1,140 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (width <= 567px) { 
+	* {
+		margin:0;
+		padding:0;
+	}
+    body {
+        width: auto;
+        height: auto;
+        padding:0px 0px;
+        background: linear-gradient($color_backdrop);
+        background-repeat:no-repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        display: table-row-group;
+        flex-direction: row;
+        .pages{
+            display: none;
+        }
+        .dropdown{
+            display: block;
+            margin: 5px 0px  ;
+            align-items: left;
+            font-size: 15px;
+            width: 50px;
+            height: auto;
+            li {
+                float: left;
+                a {
+                    color: rgba(232, 0, 0, 0);
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    flex-direction: row;
+                    background-size: auto;
+                    color: $color_page;
+                }
+                A:hover{
+                    background-color:$hover_phone;
+                }
+            }
+        }
+    }
+	/* index */
+    hr{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    header {
+        display: table-row-group;
+        flex-direction: row;
+    }
+    .content {
+        display: list-item;
+        justify-content:center;
+        flex-direction: row;
+        gap: 30px;
+        img {
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        p{
+            max-width: 25rem;
+            margin: 0 ;
+            text-align: center;
+            justify-content: right;
+            width: 10;
+            margin: 0;
+            padding: 10;
+            font-size: 16px;font-family: Verdana, Calibri, sans-serif; 
+        }
+    }
+	/* sobre nosotros */
+
+	.característica{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 25px 0;
+        p{
+            max-width: 50rem;
+            margin: 0 auto;
+            text-align: justify;
+            width: 100%;
+            height: 50%;
+            margin: 10px;
+            padding: 10;
+            font-size: 16px;font-family: Verdana, Calibri, sans-serif; 
+        }
+	}
+	
+	/* productos */
+	.todo_productos {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 25px 0;
+        .productos1 {
+            display: flex;
+            flex-direction: column;
+            margin: 1% 5%;
+        }
+        .productos2 {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0;
+        }
+	}
+
+	.Mayotista{
+		padding: 5px;
+		text-align: center;
+        p{
+            padding: 10px 0px 20px 0px;
+            font-size: 18px;
+            text-align: left;
+        }
+	}
+	/*contacto*/
+	.contacto {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+    }
+	.contacto_map{
+		width: 400px;
+		height: 450px;
+		padding: 0px 0px 500px;
+	}
+}

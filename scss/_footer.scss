@@ -1,0 +1,30 @@
+footer {
+	width: 100%;
+	padding: 3px;
+	margin: 15px 0px;
+    text-align:left;
+    background:$color_page_background;
+    color:$color_page;
+    hr{
+        color: $color_negro;
+        border: 1px solid;
+        width: 98%;
+    }
+    ul {
+        text-align: center;
+        display: flex;
+        li {
+            float: left;
+            overflow: hidden;
+            a {
+                color: $color_a;
+                display: block;
+                padding: 12px 10px;
+                text-decoration: none;
+            }
+            A:hover{
+                background-color: $background-color;
+            }
+        }
+    }
+}
