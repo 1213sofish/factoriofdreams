@@ -1,10 +1,12 @@
+@import'color';
 footer {
-	width: 100%;
-	padding: 3px;
-	margin: 15px 0px;
-    text-align:left;
     background:$color_page_background;
     color:$color_page;
+	width: 98%;
+	margin: 15px 0px;
+    text-align:center;
+    position: absolute;
+    bottom: 0;
     hr{
         color: $color_negro;
         border: 1px solid;
@@ -26,5 +28,14 @@ footer {
                 background-color: $background-color;
             }
         }
+    }
+    .link_footer img{
+        width: 25px;
+        height: 25px;
+        margin:0px 15px 0px;
+    }
+    .derechos_de_autor {
+        color: $color_negro;
+        font-size: 15px;
     }
 }

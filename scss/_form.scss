@@ -5,12 +5,14 @@
 	align-items: center;
     img{
         padding: 0;
-        width: 350px;
-        height: 350px;
+        width: 100%;
+        height: 100%;
     }
     p{
         padding: 20px;
         font-size: 20px;
+        width: 100%;
+        height: 100%;
     }
 
 }
@@ -21,7 +23,7 @@
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 1fr);
     p{
-        padding: 20px;
+        padding: 10px;
         font-size: 20px;
         text-align: center;
     }
@@ -199,9 +201,10 @@ input{
     }
 /*tipografia de preguntas frecuentes*/
 .pf h5{
-	font-size: 28px;
+	font-size: 30px;
 	text-align: left;
 	padding: 4px;
+    font-style: italic;
 }
 .Pago{
 	font-size: 18px;

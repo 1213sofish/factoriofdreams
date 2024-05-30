@@ -54,12 +54,13 @@ header .link1 img {
 }
 
 footer {
-  width: 100%;
-  padding: 3px;
-  margin: 15px 0px;
-  text-align: left;
   background: #d353f3;
   color: rgb(230, 86, 230);
+  width: 98%;
+  margin: 15px 0px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
 }
 footer hr {
   color: #000000;
@@ -83,6 +84,15 @@ footer ul li a {
 footer ul li A:hover {
   background-color: #040404;
 }
+footer .link_footer img {
+  width: 25px;
+  height: 25px;
+  margin: 0px 15px 0px;
+}
+footer .derechos_de_autor {
+  color: #000000;
+  font-size: 15px;
+}
 
 /*tipografía de inicio*/
 .content {
@@ -91,12 +101,14 @@ footer ul li A:hover {
 }
 .content img {
   padding: 0;
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
 }
 .content p {
   padding: 20px;
   font-size: 20px;
+  width: 100%;
+  height: 100%;
 }
 
 /*tipografia de sobre nosotros*/
@@ -106,7 +118,7 @@ footer ul li A:hover {
   grid-template-rows: repeat(2, 1fr);
 }
 .característica p {
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
   text-align: center;
 }
@@ -286,9 +298,10 @@ input {
 
 /*tipografia de preguntas frecuentes*/
 .pf h5 {
-  font-size: 28px;
+  font-size: 30px;
   text-align: left;
   padding: 4px;
+  font-style: italic;
 }
 
 .Pago {
@@ -308,8 +321,8 @@ input {
     padding: 0;
   }
   body {
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     padding: 0px 0px;
     background: linear-gradient(318deg, rgb(252, 40, 222) 0%, rgb(203, 177, 251) 100%);
     background-repeat: no-repeat;
@@ -346,13 +359,13 @@ input {
   header .dropdown li A:hover {
     background-color: #bc52b5;
   }
-  /* index */
-  hr {
-    display: none;
-  }
   footer {
+    max-width: 98%;
+  }
+  footer .pages {
     display: none;
   }
+  /* index */
   header {
     display: table-row-group;
     flex-direction: row;
@@ -364,19 +377,20 @@ input {
     gap: 30px;
   }
   .content img {
+    position: relative;
     margin: 0;
-    padding: 0;
+    padding: 10;
+    width: 100%;
+    height: 100%;
     align-items: center;
   }
   .content p {
-    max-width: 25rem;
+    max-width: 30rem;
     margin: 0;
     text-align: center;
-    justify-content: right;
-    width: 10;
-    margin: 0;
-    padding: 10;
-    font-size: 16px;
+    justify-content: normal;
+    padding: 10px;
+    font-size: 20px;
     font-family: Verdana, Calibri, sans-serif;
   }
   /* sobre nosotros */
@@ -391,12 +405,17 @@ input {
     max-width: 50rem;
     margin: 0 auto;
     text-align: justify;
+    text-align: center;
     width: 100%;
     height: 50%;
     margin: 10px;
     padding: 10;
-    font-size: 16px;
+    font-size: 18px;
     font-family: Verdana, Calibri, sans-serif;
+  }
+  .característica img {
+    font-size: 1fr;
+    min-height: 400px;
   }
   /* productos */
   .todo_productos {
@@ -440,6 +459,67 @@ input {
     padding: 0px 0px 500px;
   }
 }
+@media (width < 750px) {
+  /* index */
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .content img {
+    position: relative;
+    margin: 10px;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+  }
+  .content p {
+    position: relative;
+    max-width: 30rem;
+    margin: 0px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Verdana, Calibri, sans-serif;
+  }
+  /* sobre nosotros */
+  .característica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+  }
+  .característica p {
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: justify;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    margin: 10px;
+    padding: 10;
+    font-size: 18px;
+    font-family: Verdana, Calibri, sans-serif;
+  }
+  .característica img {
+    font-size: 1fr;
+    min-height: 400px;
+  }
+  /*contacto*/
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacto_map {
+    width: 400px;
+    height: 450px;
+    padding: 0px 0px 500px;
+  }
+}
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -448,19 +528,31 @@ html body {
   width: 100%;
   height: 100%;
   padding: 10px 10px;
+  position: relative;
+  padding-bottom: 12em;
+  min-height: 100vh;
   background: linear-gradient(318deg, rgb(252, 40, 222) 0%, rgb(203, 177, 251) 100%);
   background-repeat: no-repeat;
 }
-html .h1 {
-  width: 400px;
+html body .a_inicio a {
+  text-decoration: none;
+}
+html body h1 {
   color: #000000;
   font-family: "Alex Brush";
-  font-weight: 400;
-  font-size: 0%;
   text-align: left;
 }
-html h2 {
+html body h2 {
   color: #ff00b3;
   font-family: Verdana, Calibri, sans-serif;
   font-size: 28px;
+}
+html body h3 {
+  color: #ff0000;
+  font-family: Verdana, Calibri, sans-serif;
+  font-size: 25px;
+}
+html body h4 {
+  color: #000000;
+  font-size: 22px;
 }/*# sourceMappingURL=style.css.map */
