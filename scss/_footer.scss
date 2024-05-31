@@ -1,5 +1,6 @@
 @import'color';
 footer {
+
     background:$color_page_background;
     color:$color_page;
 	width: 98%;
@@ -27,7 +28,7 @@ footer {
             A:hover{
                 background-color: $background-color;
             }
-        }
+        } 
     }
     .link_footer img{
         width: 25px;
