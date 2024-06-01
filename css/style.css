@@ -226,7 +226,7 @@ footer .derechos_de_autor {
   text-align: left;
 }
 .contacto .contacto_map {
-  width: 1000px;
+  width: 100%;
   height: 500px;
   padding: 0px 15px;
 }
