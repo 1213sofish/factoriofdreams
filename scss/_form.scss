@@ -103,15 +103,16 @@
 }
 
 .Mayotista{
-	padding: 5px;
+	padding: 10px;
+    margin: 20px;
     h4{
         padding: 10px 0px 0px 0px;
-        font-size: 36px;
+        font-size:36px;
         text-align: left;
     }
     p{
         padding: 10px 0px 0px 0px;
-        font-size: 28px;
+        font-size: 20px;
         text-align: left;
     }
 }
@@ -200,17 +201,26 @@ input{
     justify-content: flex-start;
     }
 /*tipografia de preguntas frecuentes*/
-.pf h5{
-	font-size: 30px;
-	text-align: left;
-	padding: 4px;
-    font-style: italic;
-}
-.Pago{
-	font-size: 18px;
-	text-align: justify;
-}
-.pf p{
-	font-size: 20px;
-	text-align: left;
-}
+.pf{
+    margin: 20px 10% 0px;
+    width: 90%;
+    h3{
+        margin: 25px 0px 0px;
+        font-size: 24px;
+        text-align: left;
+        font-style: italic;
+        word-wrap:break-word;
+    }
+    p{
+        font-size: 18px;
+        text-align: left;
+        word-wrap:break-word;
+    }    
+    .Pago{
+        font-size: 18px;
+        text-align: left;
+        word-wrap:break-word;
+    }
+} 
+
+
